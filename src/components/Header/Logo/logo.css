@@ -1,0 +1,11 @@
+.logo-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: opacity 0.2 linear;
+}
+
+.logo-name span {
+    color: #ffd615;
+}

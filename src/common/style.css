@@ -1,0 +1,54 @@
+*, *::before, *::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/*conatiner*/
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  width: 185px;
+  position: relative;
+  text-align: center;
+  background-color: #000;
+  border-radius: 5px;
+  padding: 12px 0;
+  margin-top: 30px;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s linear;
+}
+
+.btn:hover {
+  background-color: #ff5715;
+}
+
+/*крутящаяся заставка риэкт через кифреймс с задержкой*/
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

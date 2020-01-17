@@ -1,0 +1,6 @@
+.stories-little {
+    width: 50%;
+
+    display: flex;
+    flex-wrap: wrap;
+}

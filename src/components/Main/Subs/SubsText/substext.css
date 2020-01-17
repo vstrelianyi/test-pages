@@ -1,0 +1,11 @@
+.subs-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999999;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 50%;
+    margin: 0 auto;
+}

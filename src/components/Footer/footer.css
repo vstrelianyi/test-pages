@@ -1,0 +1,27 @@
+.footer {
+    padding: 118px 0 70px 0;
+    background-color: #1f1f1f;
+}
+
+.footer-content {
+    display: flex;
+}
+
+.footer-stories, .footer-info, .footer-cat, .footer-q {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
+
+.footer-info__link, .footer-cat__link, .footer-q__link, .creator {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #999999;
+    margin-bottom: 25px;
+}
+
+.footer-info__link:hover, .footer-cat__link:hover, .footer-q__link:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}

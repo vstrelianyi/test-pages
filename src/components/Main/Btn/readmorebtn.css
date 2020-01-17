@@ -1,0 +1,13 @@
+.post-btn{
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+
+}
+
+.read-more__btn{
+    font-family: 'Poppins', sans-serif;
+    text-transform: lowercase;
+    padding: 5px 0 5px 0;
+    text-align: center;
+}

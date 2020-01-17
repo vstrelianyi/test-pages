@@ -1,0 +1,19 @@
+.stories-little__item-social {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding: 5px 0;
+}
+
+.stories-little__item-social a {
+    font-size: 28px;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.2 linear;
+}
+
+.stories-little__item-social a:hover {
+    transform: translateY(-3px);
+    transform: scale(1.4);
+    color: #ff5715;
+}

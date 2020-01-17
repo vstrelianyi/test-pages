@@ -1,0 +1,18 @@
+
+
+.footer-q__link {
+    position: relative;
+    line-height: 1.8;
+
+}
+
+.footer-q__link img {
+    height: 25px;
+    position: absolute;
+    top: -5px;
+    left: -35px;
+}
+
+.footer-q__link:first-child {
+    top: 0;
+}

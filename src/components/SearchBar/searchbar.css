@@ -1,0 +1,35 @@
+.about-search {
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+.search {
+    width: 80%;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    border-radius: 5px;
+    padding: 15px 10px;
+    outline: none;
+}
+
+
+.about-search img {
+    position: absolute;
+    height: 25px; 
+    right: 45px;
+    top: 45px;
+}
+
+.search::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+input[type="search"] {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 10px;
+}

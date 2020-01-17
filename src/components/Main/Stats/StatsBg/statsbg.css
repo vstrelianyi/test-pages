@@ -1,0 +1,6 @@
+.about-stories__bg {
+    width: 50%;
+
+    background: url(../../../img/bg_5.jpg) center/cover;
+    height: 670px;
+}
