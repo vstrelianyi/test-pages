@@ -2,9 +2,9 @@ import React from 'react'
 
 import './slidertitle.css'
 
-function SliderTitle(){
+function SliderTitle({title}){
     return (
-        <div className="slider__title">I am a blogger and food lover</div>
+        <div className="slider__title">{title}</div>
     )
 }
 

@@ -4,7 +4,7 @@ import './common/style.css';
 import './common/reset.css';
 
 import Header from './components/Header/Header'
-import Slider from './components/Slider/Slider'
+import SliderPage from './components/SliderPage/SliderPage'
 import Main from './components/Main/Main'
 import Footer from './components/Footer/Footer'
 
@@ -14,7 +14,7 @@ function App() {
   
      <Header />
 
-     <Slider />
+     <SliderPage />
      
      <Main />
 
