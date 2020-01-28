@@ -9,3 +9,19 @@
 .logo-name span {
     color: #ffd615;
 }
+
+/*крутящаяся заставка риэкт через кифреймс с задержкой*/
+@media (prefers-reduced-motion: no-preference) {
+    .logo-name {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
