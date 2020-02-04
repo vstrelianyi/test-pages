@@ -1,12 +1,13 @@
 import React from 'react'
-import arrowToRight from '../../img/arrowToRight.svg'
+import {Link} from 'react-router-dom'
+// import arrowToRight from '../../img/arrowToRight.svg'
 
 import './readmorebtn.css'
 
 function ReadMoreBtn() {
     return (
         <div className="btn post-btn">
-            <a href="#" className="read-more__btn">read more</a>
+            <Link to='/' className="read-more__btn">read more</Link>
             {/* <img src={arrowToRight} height='20' alt="" /> */}
         </div>
     )

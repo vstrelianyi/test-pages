@@ -26,9 +26,8 @@ const storiesLittleData = [
         category: 'desert',
         year: 2019,
         title: 'Tatsy & Not So Delicious Foods'
-    }
+    },
+    
 ]
-
-
 
 export default storiesLittleData

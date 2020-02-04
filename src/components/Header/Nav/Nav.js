@@ -1,30 +1,31 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 import './nav.css'
 
 function Nav() {
     return(
-        <nav class="nav">
-        <div class="hamburger-menu">
-            <div class="line line1"></div>
-            <div class="line line2"></div>
-            <div class="line line3 "></div>
+        <nav className="nav">
+        <div className="hamburger-menu">
+            <div className="line line1"></div>
+            <div className="line line2"></div>
+            <div className="line line3 "></div>
         </div>
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Home</a>
+        <ul className="nav-list">
+            <li className="nav-item">
+                <Link to='/' className="nav-link">Home</Link>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
+            <li className="nav-item">
+                <Link to='/' className="nav-link">About</Link>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Foods</a>
+            <li className="nav-item">
+                <Link to='/foodsPage' className="nav-link">Foods</Link>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Lifestyle</a>
+            <li className="nav-item">
+                <Link to='/' className="nav-link">Lifestyle</Link>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
+            <li className="nav-item">
+                <Link to='/' className="nav-link">Contact</Link>
             </li>
         </ul>
     </nav>

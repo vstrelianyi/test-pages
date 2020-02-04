@@ -4,8 +4,7 @@ import './common/style.css';
 import './common/reset.css';
 
 import Header from './components/Header/Header'
-import SliderPage from './components/SliderPage/SliderPage'
-import Main from './components/Main/Main'
+import MainContent from './components/MainContent/MainContent'
 import Footer from './components/Footer/Footer'
 
 function App() {
@@ -14,9 +13,7 @@ function App() {
   
      <Header />
 
-     <SliderPage />
-     
-     <Main />
+     <MainContent />
 
      <Footer />
 

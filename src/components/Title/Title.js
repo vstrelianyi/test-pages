@@ -4,7 +4,7 @@ import './title.css'
 
 function Title(props) {
     return (
-        <h2 class="title">{props.title}</h2>
+        <h2 className="title">{props.title}</h2>
     )
 }
 

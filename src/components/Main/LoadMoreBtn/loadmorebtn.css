@@ -1,0 +1,18 @@
+.load-more{
+    width: 97%;
+    opacity: 0.75;
+    height: 40px;
+
+}
+
+.load-more-btn{
+text-align: center;
+text-decoration: none;
+text-transform: uppercase;
+color: #fff;
+font-weight: 600;
+letter-spacing: 1px;
+position: relative;
+left: 45%;
+height: 20px;
+}

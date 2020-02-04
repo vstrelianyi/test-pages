@@ -8,17 +8,17 @@ import './mainsocial.css'
 
 function MainSocial() {
     return(
-        <div class="stories-little__item-social">
-                            <a href='#' class="stories-little__social-icon">
+        <div className="stories-little__item-social">
+                            <a href='#' className="stories-little__social-icon">
                                 <View />                 
                             </a>
-                            <a href='#' class="stories-little__social-icon">
+                            <a href='#' className="stories-little__social-icon">
                                 <Like />                        
                             </a>
-                            <a href='#' class="stories-little__social-icon">
+                            <a href='#' className="stories-little__social-icon">
                                 <Comment />                             
                             </a>
-                            <a href='#' class="stories-little__social-icon">
+                            <a href='#' className="stories-little__social-icon">
                                 <Share /> 
                             </a>
                         </div>

@@ -4,12 +4,15 @@
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 0.2s linear, transform 0.2s linear;
+    transition: box-shadow 0.2s linear, transform 0.2s linear,
+    transform 0.2s linear;
     cursor: pointer;
 }
 
 .stories-little__item:hover {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    transform: scale(1.07);
+
 }
 
 .stories-little__item:nth-child(1), .stories-little__item:nth-child(2) {
