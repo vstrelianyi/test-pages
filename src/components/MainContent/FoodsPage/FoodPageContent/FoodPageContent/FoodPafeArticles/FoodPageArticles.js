@@ -15,6 +15,7 @@ const FoodsPageArticles = ({foodPageArticlesData, category, showFullArticle}) =>
                 category,
                 year,
                 title,
+               
             }) => (
                 
                     <SingleFoodArticle 

@@ -1,18 +1,25 @@
 import React from 'react'
+import ArticleSideBar from './ArticleSideBar/ArticleSideBar'
 
 import './article.css'
+import ArticleContent from './ArticleContent/ArticleContent'
+
 
 const Article = ({
     id,
     image,
+    image2,
     category,
     year,
     title,
-    text,
-    author
+    author,
+    subTitle2,
+    subTitle1,
+    p1,
+    p2  
 }) => {
     return (
-        <div className='article'>
+        <div className='articlePage'>
 
             <div className='article-intro'>
                 <img className="article-img" src={image} alt={title} />
@@ -27,13 +34,20 @@ const Article = ({
 
             <div className="container">
 
-                <div>{text}</div>
-                <div>{author}</div>
+                <div className='article'>
 
-                <div>
-                    <span>{year}</span>
+                    <ArticleSideBar />
+
+                    <ArticleContent 
+                        image2={image2}   
+                        subTitle1={subTitle1}
+                        subTitle2={subTitle2}
+                        p1={p1}
+                        p2={p2}
+                        author={author} />    
+                  
+                    
                 </div>
-                
             </div>
         </div>
     )

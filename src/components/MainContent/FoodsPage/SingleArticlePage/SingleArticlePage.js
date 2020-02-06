@@ -15,14 +15,23 @@ const SingleArticlePage = ({ foodPageArticlesData, id }) => {
             {foodPageArticlesData.filter(filterById).map(({
                 id,
                 image,
+                image2,
                 category,
                 year,
                 title,
-                text,
-                author
+                author,
+                subTitle1,
+                subTitle2,
+                p1,
+                p2,
             }) => (
                     <Article key={id} 
-                    {...{id,image, category, year, title, text, author}} />
+                    {...{id, image, image2, category, year, title, 
+                        author, 
+                        subTitle1,
+                        subTitle2,
+                        p1,
+                        p2,}} />
                 ))
 
             }

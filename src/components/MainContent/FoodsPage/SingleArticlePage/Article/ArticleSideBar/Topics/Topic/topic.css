@@ -1,0 +1,22 @@
+.topic {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 15px;
+    font-weight: 400;
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 0px 10px;
+    margin: 5px 0px 10px;
+    cursor: pointer;
+}
+
+.topic:hover {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.topic-number {
+    color: #cccccc;
+}

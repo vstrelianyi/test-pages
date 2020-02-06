@@ -1,0 +1,78 @@
+.comment-section {
+    margin: 50px 0 50px;
+}
+
+.leave-a-comment{
+    margin-top: 75px;
+}
+
+.comments, .leave-a-comment__title {
+    font-family: "Playfair Display", serif;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.form{
+    background-color: #eeececda;
+    border-radius: 3px;
+    padding: 35px;
+
+}
+
+.form__label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 40px;
+}
+
+.form__input, .form__textarea {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);;
+    line-height: 1;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    transition: border 0.3s linear;
+}
+
+.form__input:focus, .form__textarea:focus {
+    outline: none;
+    border: 2px solid #707070;
+}
+
+.form__input:placeholder, .form__textarea:placeholder {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.form__group {
+    margin-bottom: 25px;
+}
+
+.form__textarea {
+    height: 200px;
+    resize: none;
+}
+
+.btn {
+    background-color: #000;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    padding: 0 0 0 30px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.2s linear;
+}
+
+.btn:hover {
+    background-color: #ff5715;
+}
