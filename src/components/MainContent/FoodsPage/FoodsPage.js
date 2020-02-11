@@ -5,8 +5,11 @@ import FoodPageContent from './FoodPageContent/FoodPageContent'
 
 
 
-const FoodsPage = ({foodPageArticlesData, category, setCategory, showFullArticle}) => { 
-
+const FoodsPage = ({
+    foodPageArticlesData, 
+    category, 
+    setCategory, 
+}) => { 
     return (
         <div>
             <FoodPageIntro />
@@ -14,9 +17,8 @@ const FoodsPage = ({foodPageArticlesData, category, setCategory, showFullArticle
                 foodPageArticlesData={foodPageArticlesData}
                 category={category}
                 setCategory={setCategory}
-                showFullArticle={showFullArticle}/>
+                />
             <Subs />
-
         </div>
     )
 }

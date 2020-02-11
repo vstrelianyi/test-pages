@@ -8,6 +8,7 @@
 .read-more__btn{
     font-family: 'Poppins', sans-serif;
     text-transform: lowercase;
-    padding: 5px 0 5px 0;
     text-align: center;
+    margin-left: 0;
+    padding: 15px 0 15px 0;
 }

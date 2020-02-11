@@ -72,4 +72,12 @@ const foodPageArticlesData = [
     
 ]
 
+export const getArticlesMap = (arr) => {
+    return arr.reduce((accObj, article) => ({
+        ...accObj,
+        [article.id]: article,
+    }), {})
+}
+
+
 export default foodPageArticlesData

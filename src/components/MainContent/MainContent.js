@@ -19,29 +19,34 @@ class MainContent extends Component {
     }
         //СategoryFilter = () => {foodPageArticlesData.filter(function(article) { return article.id === 2})}
 
-    showFullArticle = (id) => {
-        this.setState({id})
-        console.log(id)
-    }
+    // showFullArticle = (id) => {
+    //     this.setState({id})
+    //     console.log(id)
+    // }
 
     render() {
 
         return (
             <div>
-                <Route exact path='/' component={SliderPage} />
-                <Route exact path='/' component={Main} />
-                <Route path='/foodsPage'
-                    render={() => (
-                        <FoodsPage foodPageArticlesData={this.state.foodPageArticlesData}
-                            category={this.state.category}
-                            setCategory={this.setCategory}
-                            showFullArticle={this.showFullArticle} />)} />
-                <Route path='/singleArticlePage'
-                    render={() => (
-                        <SingleArticlePage
-                            foodPageArticlesData={this.state.foodPageArticlesData} 
-                            id={this.state.id}
-                            />)} />
+              
+                    <Route exact path='/' component={SliderPage} />
+                    <Route exact path='/' component={Main} />
+                    <Route exact path='/foodsPage' 
+                        render={() => ( 
+                            <FoodsPage foodPageArticlesData={this.state.foodPageArticlesData}
+                                category={this.state.category}
+                                setCategory={this.setCategory}
+                                />)} />
+
+                    <Route path='/foodsPage/:article' component={SingleArticlePage}/>
+
+                    {/* <Route path='/singleArticlePage'
+                        render={() => (
+                            <SingleArticlePage
+                                foodPageArticlesData={this.state.foodPageArticlesData} 
+                                id={this.state.id}
+                                />)} /> */}
+               
             </div>
         )
     }

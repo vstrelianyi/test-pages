@@ -11,7 +11,7 @@ const SingleFoodArticle = ({
     image,
     category,
     year,
-    title, showFullArticle
+    title
 }) => {
     return (
         <div className='stories-little__item post-item item'>
@@ -23,19 +23,18 @@ const SingleFoodArticle = ({
             <span>{category}</span>
             <span>{year}</span>
         </div>
-        <Link to='/singleArticlePage' 
+        
+        <Link to={`/foodsPage/${id}`}
             className="stories-little__item-title post-item-title"
-            onClick={() => showFullArticle(id)}>
+            //  onClick={() => showFullArticle(id)}
+            >
             {title}
         </Link>
 
        <ReadMoreBtn />
        
-
     </div>
-
     )
-    
 }
 
 export default SingleFoodArticle
