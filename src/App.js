@@ -1,22 +1,20 @@
-import React from 'react';
+import React from "react";
 
-import './common/style.css';
-import './common/reset.css';
+import "./common/style.css";
+import "./common/reset.css";
 
-import Header from './components/Header/Header'
-import MainContent from './components/MainContent/MainContent'
-import Footer from './components/Footer/Footer'
+import Header from "./components/Header/Header";
+import MainContent from "./components/MainContent/MainContent";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
-  
-     <Header />
+      <Header />
 
-     <MainContent />
+      <MainContent />
 
-     <Footer />
-
+      <Footer />
     </div>
   );
 }

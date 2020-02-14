@@ -1,31 +1,26 @@
-import React from 'react';
-import Stories from './MainSections/Stories/Stories';
-import Posts from './Posts/Posts';
-import Roger from './Roger/Roger';
-import Stats from './Stats/Stats';
-import Subs from './Subs/Subs'
+import React from "react";
+import Stories from "./MainSections/Stories/Stories";
+import Posts from "./Posts/Posts";
+import Roger from "./Roger/Roger";
+import Stats from "./Stats/Stats";
+import Subs from "./Subs/Subs";
 
-
-
-
-import './main.css';
+import "./main.css";
 
 function Main() {
-    return (
-        <div className='main'>
-            
-            <Stories />
+  return (
+    <div className="main">
+      <Stories />
 
-            <Posts />
+      <Posts />
 
-            <Roger />
+      <Roger />
 
-            <Stats />
+      <Stats />
 
-            <Subs />
-            
-        </div>
-    )
+      <Subs />
+    </div>
+  );
 }
 
-export default Main
+export default Main;
