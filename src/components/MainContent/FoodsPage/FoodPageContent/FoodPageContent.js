@@ -2,23 +2,24 @@ import React from 'react'
 import Title from '../../../Title/Title'
 
 import './foodpagecontent.css'
-import FoodsPageArticles from './FoodPageContent/FoodPafeArticles/FoodPageArticles'
+import FoodPageArticles from './FoodPageContent/FoodPafeArticles/FoodPageArticles'
 import SideBar from './SideBar/SideBar'
 
 const FoodPageContent = ({ 
     foodPageArticlesData, 
-    category, 
-    setCategory 
+    filterFn, 
+    setCategory,
+    toggleLike 
 }) => {
     return (
         <div className="container">
             <Title title="Recent food articles" />
 
             <div className="content">
-                <FoodsPageArticles
+                <FoodPageArticles
                     foodPageArticlesData={foodPageArticlesData}
-                    category={category}
-                    setCategory={setCategory} />
+                    filterFn={filterFn}
+                    toggleLike={toggleLike}/>
                 <SideBar setCategory={setCategory} />
             </div>
         </div>

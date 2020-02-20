@@ -1,13 +1,13 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-
 
 import './loadmorebtn.css'
 
-const LoadMoreBtn = () => {
+const LoadMoreBtn = ({loadMoreFn}) => {
     return (
-        <div className="btn load-more">
-            <Link to='/' className="load-more-btn">load more. . .</Link>
+        <div className="loadMore">
+            <button
+                className="load-more-button"
+                onClick={loadMoreFn}>load more. . .</button>
         </div>
     )
 }

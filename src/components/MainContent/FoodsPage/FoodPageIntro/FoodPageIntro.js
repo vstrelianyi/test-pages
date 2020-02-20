@@ -1,21 +1,30 @@
-import React from 'react'
-import './foodpageintro.css'
+import React from "react";
+import "./foodpageintro.css";
+import { Animated } from "react-animated-css";
 
 const FoodPageIntro = () => {
-    return (
-        <div>
+  return (
+    <Animated animationIn="fadeIn" animationInDuration={2000} isVisible={true}>
+      <div>
         <div className="foods-main">
-        <div className="overlay"></div>
-        <div className="food-main__title">
-            <div className="food-main__big-title">Foods</div>
-            <div className="food-main__sub-title">
-                <span>Home ></span>
-                <span>Foods ></span>
-            </div>
-        </div>
-    </div>
-        </div>
-    )
-}
+          <div className="overlay"></div>
+          <div className="food-main__title">
+            <Animated
+              animationIn="flipInX"
+              animationInDuration={2000}
+              isVisible={true}>
+              <div className="food-main__big-title">Food articles</div>
+            </Animated>
 
-export default FoodPageIntro
+            <div className="food-main__sub-title">
+              <span>Home ></span>
+              <span>Foods ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Animated>
+  );
+};
+
+export default FoodPageIntro;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import sliderPageData from './sliderPagaData'
+import { Animated } from "react-animated-css"
 
 import Slider from 'react-slick'
 
@@ -37,6 +38,10 @@ class SliderPage extends Component {
         };
 
         return (
+            <Animated 
+            animationIn="fadeIn"
+        animationInDuration={2500} 
+        isVisible={true} >
             <div className='slider'>
                 <div className='container'>
 
@@ -55,6 +60,7 @@ class SliderPage extends Component {
 
                 </div>
             </div>
+            </Animated>
         )
     }
 

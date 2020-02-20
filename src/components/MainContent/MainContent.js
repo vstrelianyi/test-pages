@@ -1,58 +1,57 @@
-import React, { Component } from "react";
+import React from "react";
 import Main from "../Main/Main";
 import SliderPage from "../SliderPage/SliderPage";
 import FoodsPage from "./FoodsPage/FoodsPage";
 import SingleArticlePage from "./FoodsPage/SingleArticlePage/SingleArticlePage";
-import foodPageArticlesData from "./FoodsPage/FoodPageContent/FoodPageContent/FoodPafeArticles/foodPageArticlesData";
+import Favourite from '../Favourite/Favourite'
 
 import { Route } from "react-router-dom";
 
-class MainContent extends Component {
-  state = {
-    foodPageArticlesData,
-    category: null,
-    id: 0
-  };
+const MainContent = ({
+  foodPageArticlesData,
+  setCategory,
+  category,
+  toggleLike
+}) => {
+  return (
+    <div>
+      <Route exact path="/" component={SliderPage} />
+      <Route exact path="/" component={Main} />
+      <Route
+        exact
+        path="/foodsPage"
+        render={() => (
+          <FoodsPage
+            foodPageArticlesData={foodPageArticlesData}
+            filterFn={category ? (article) => article.category === category : Boolean}
+            setCategory={setCategory}
+            toggleLike={toggleLike}
+          />
+        )}
+      />
 
-  setCategory = (category = null) => {
-    this.setState({ category });
-  };
-  //СategoryFilter = () => {foodPageArticlesData.filter(function(article) { return article.id === 2})}
+      <Route path="/foodsPage/:article" component={SingleArticlePage} />
 
-  // showFullArticle = (id) => {
-  //     this.setState({id})
-  //     console.log(id)
-  // }
-
-  render() {
-    return (
-      <div>
-        <Route exact path="/" component={SliderPage} />
-        <Route exact path="/" component={Main} />
-        <Route
-          exact
-          path="/foodsPage"
-          render={() => (
-            <FoodsPage
-              foodPageArticlesData={this.state.foodPageArticlesData}
-              category={this.state.category}
-              setCategory={this.setCategory}
+      <Route 
+        path="/favourite" 
+        render={() => (
+          <Favourite 
+            foodPageArticlesData={foodPageArticlesData}
+            filterFn={(article) => article.isLiked} 
+            toggleLike={toggleLike}
+            setCategory={setCategory}
             />
-          )}
-        />
+        )}/>
 
-        <Route path="/foodsPage/:article" component={SingleArticlePage} />
-
-        {/* <Route path='/singleArticlePage'
-                        render={() => (
-                            <SingleArticlePage
-                                foodPageArticlesData={this.state.foodPageArticlesData} 
-                                id={this.state.id}
-                                />)} /> */}
-      </div>
-    );
-  }
-}
+      {/* <Route path='/singleArticlePage'
+            render={() => (
+            <SingleArticlePage
+            foodPageArticlesData={this.state.foodPageArticlesData} 
+            id={this.state.id}
+      />)} /> */}
+    </div>
+  );
+};
 
 // const MainContent = () => {
 //     return (

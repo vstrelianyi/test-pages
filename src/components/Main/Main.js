@@ -9,17 +9,17 @@ import "./main.css";
 
 function Main() {
   return (
-    <div className="main">
-      <Stories />
-
-      <Posts />
-
-      <Roger />
-
-      <Stats />
-
-      <Subs />
-    </div>
+      <div className="main">
+        <Stories />
+  
+        <Posts />
+  
+        <Roger />
+  
+        <Stats />
+  
+        <Subs />
+      </div>
   );
 }
 

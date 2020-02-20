@@ -11,13 +11,18 @@ const SingleFoodArticle = ({
     image,
     category,
     year,
-    title
+    title,
+    isLiked,
+    toggleLike
 }) => {
     return (
         <div className='stories-little__item post-item item'>
         <img className="post-img" src={image} alt={title} />
 
-        <MainSocial />
+        <MainSocial 
+            isLiked={isLiked} 
+            toggleLike={toggleLike}
+            id={id} />
 
         <div className="stories-little__item-cat">
             <span>{category}</span>

@@ -32,7 +32,6 @@ const SingleArticlePage = ({
 
       <div className="container">
         <div className="article">
-
           <ArticleSideBar />
 
           <ArticleContent
@@ -43,7 +42,6 @@ const SingleArticlePage = ({
             p2={articlesMap[match.params.article].p2}
             author={articlesMap[match.params.article].author}
           />
-          
         </div>
       </div>
     </div>

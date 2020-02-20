@@ -3,7 +3,9 @@ import {Link} from 'react-router-dom'
 
 import './nav.css'
 
-function Nav() {
+
+
+function Nav({favCount}) {
     return(
         <nav className="nav">
         <div className="hamburger-menu">
@@ -22,7 +24,7 @@ function Nav() {
                 <Link to='/foodsPage' className="nav-link">Foods</Link>
             </li>
             <li className="nav-item">
-                <Link to='/' className="nav-link">Lifestyle</Link>
+                <Link to='/favourite' className="nav-link">Favourite{favCount ? ` (${favCount})` : ''}</Link>
             </li>
             <li className="nav-item">
                 <Link to='/' className="nav-link">Contact</Link>

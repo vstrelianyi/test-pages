@@ -7,16 +7,18 @@ import FoodPageContent from './FoodPageContent/FoodPageContent'
 
 const FoodsPage = ({
     foodPageArticlesData, 
-    category, 
+    filterFn, 
     setCategory, 
+    toggleLike
 }) => { 
     return (
         <div>
             <FoodPageIntro />
             <FoodPageContent 
                 foodPageArticlesData={foodPageArticlesData}
-                category={category}
+                filterFn={filterFn}
                 setCategory={setCategory}
+                toggleLike={toggleLike}
                 />
             <Subs />
         </div>
