@@ -1,5 +1,5 @@
 {
-  "homepage": "https://hakopjanov.github.io/deploy4",
+  "homepage": "https://hakopjanov.github.io/food_app_deploy",
   "name": "food-blog-app",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +19,6 @@
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
-   
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
