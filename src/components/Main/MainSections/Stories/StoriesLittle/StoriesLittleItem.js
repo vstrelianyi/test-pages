@@ -1,41 +1,40 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-import MainSocial from '../../../MainSocial/MainSocial'
-import ReadMoreBtn from '../../../Btn/ReadMoreBtn'
+import MainSocial from "../../../MainSocial/MainSocial";
+import ReadMoreBtn from "../../../Btn/ReadMoreBtn";
 
-import './storieslittleitem.css'
+import "./storieslittleitem.css";
 
-const StoriesLittleItem = ({
-    image,
-    category,
-    year,
-    title,
-}) => {
-    return(
-        <div className='stories-little__item'>
-            <img class="stories-little__item-img" src={image} alt={title} />
+const StoriesLittleItem = ({ id, image, category, year, title, toggleLike, isLiked }) => {
+  return (
+    <div className="stories-little__item">
+      <img class="stories-little__item-img" src={image} alt={title} />
 
-            <MainSocial />
+      <MainSocial 
+            isLiked={isLiked} 
+            toggleLike={toggleLike}
+            id={id}/>
 
-            <div class="stories-little__item-cat">
-                <span>{category}</span>
-                <span>{year}</span>
-            </div>
-            <div class="stories-little__item-title">
-                {title}
-            </div>
+      <div class="stories-little__item-cat">
+        <span>{category}</span>
+        <span>{year}</span>
+      </div>
 
-           <ReadMoreBtn />
+      <Link to={`/foodsPage/${id}`} className="stories-little__item-title">
+        {title}
+      </Link>
 
-        </div>
-    )
-}
+      <ReadMoreBtn />
+    </div>
+  );
+};
 
 StoriesLittleItem.propTypes = {
-    category: PropTypes.string.isRequired,
-    year: PropTypes.number.isRequired,
-    title: PropTypes.string.isRequired,
-}
+  category: PropTypes.string.isRequired,
+  year: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired
+};
 
-export default StoriesLittleItem
+export default StoriesLittleItem;

@@ -5,7 +5,10 @@ import Title from '../../../Title/Title'
 
 import './stories.css'
 
-function Stories() {
+function Stories({
+        foodPageArticlesData,
+        toggleLike
+    }) {
     return(
         <div className='stories'>
             <div className='container'>
@@ -14,7 +17,9 @@ function Stories() {
 
                 <div className='recent-stories'> 
 
-                    <StoriesLittle />
+                    <StoriesLittle 
+                        foodPageArticlesData={foodPageArticlesData}
+                        toggleLike={toggleLike} />
 
                     <BigStory />
                 

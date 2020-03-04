@@ -5,7 +5,7 @@ import FoodsPage from "./FoodsPage/FoodsPage";
 import SingleArticlePage from "./FoodsPage/SingleArticlePage/SingleArticlePage";
 import Favourite from '../Favourite/Favourite'
 
-import { Route } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 const MainContent = ({
   foodPageArticlesData,
@@ -14,9 +14,18 @@ const MainContent = ({
   toggleLike
 }) => {
   return (
-    <div>
-      <Route exact path="/" component={SliderPage} />
-      <Route exact path="/" component={Main} />
+    <Switch>
+      <Route exact 
+        path="/home" 
+        render = { () => (
+          <div>
+            <SliderPage/>
+            <Main 
+            foodPageArticlesData={foodPageArticlesData}
+            toggleLike={toggleLike}
+            />
+          </div>
+        ) }/>
       <Route
         exact
         path="/foodsPage"
@@ -49,7 +58,7 @@ const MainContent = ({
             foodPageArticlesData={this.state.foodPageArticlesData} 
             id={this.state.id}
       />)} /> */}
-    </div>
+    </Switch>
   );
 };
 

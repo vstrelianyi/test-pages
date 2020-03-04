@@ -69,6 +69,27 @@ const foodPageArticlesData = [
         year: 2019,
         title: 'Tatsy & Not'
     },
+    {
+        id: 10,
+        image: '/images/blog-9.jpg',
+        category: 'soup',
+        year: 2019,
+        title: 'Tatsy & Not'
+    },
+    {
+        id: 11,
+        image: '/images/blog-9.jpg',
+        category: 'soup',
+        year: 2019,
+        title: 'Tatsy & Not'
+    },
+    {
+        id: 12,
+        image: '/images/blog-9.jpg',
+        category: 'soup',
+        year: 2019,
+        title: 'Tatsy & Not'
+    },
     
 ]
 

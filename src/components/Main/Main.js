@@ -7,10 +7,16 @@ import Subs from "./Subs/Subs";
 
 import "./main.css";
 
-function Main() {
+function Main({
+  foodPageArticlesData,
+  toggleLike
+}) {
   return (
       <div className="main">
-        <Stories />
+        <Stories 
+          foodPageArticlesData={foodPageArticlesData}
+          toggleLike={toggleLike}
+          />
   
         <Posts />
   
