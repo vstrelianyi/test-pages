@@ -1,6 +1,6 @@
 {
+  "homepage": "https://hakopjanov.github.io/food_app_deploy",
   "name": "food-blog-app",
-  "homepage": "https://hakopjanov.github.io/thank_god_for_food_react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
