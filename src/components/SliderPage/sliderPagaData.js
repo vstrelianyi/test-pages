@@ -1,8 +1,8 @@
 const sliderPageData = [
     {
         id: 1,
-        image: 'images/bg_2.jpg',
-        title: 'I am a ',
+        image: '../images/bg_2.jpg',
+        title: 'I am a A small fuker',
         text: 'A small fuker'
     },
     {
