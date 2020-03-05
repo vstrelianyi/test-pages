@@ -40,20 +40,18 @@ class App extends Component {
 
   }
 
-
-
   render() {
     const favCount = this.state.foodPageArticlesData.filter((article) => article.isLiked).length
     return (
       <Router>
         <div className="App">
 
-          <Header favCount={favCount}/>
+          <Header favCount={ favCount }/>
           <MainContent
-            foodPageArticlesData={this.state.foodPageArticlesData}
-            category={this.state.category}
-            setCategory={this.setCategory}
-            toggleLike={this.toggleLike}
+            foodPageArticlesData={ this.state.foodPageArticlesData }
+            category={ this.state.category }
+            setCategory={ this.setCategory }
+            toggleLike={ this.toggleLike }
           />
           <Footer />
 

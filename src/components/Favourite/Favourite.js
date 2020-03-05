@@ -7,7 +7,6 @@ import SideBar from "../MainContent/FoodsPage/FoodPageContent/SideBar/SideBar";
 import { Animated } from "react-animated-css";
 
 const Favourite = ( { match, foodPageArticlesData, filterFn, toggleLike } ) => {
-  console.log(foodPageArticlesData)
   return (
     <div className="container">
       <Animated

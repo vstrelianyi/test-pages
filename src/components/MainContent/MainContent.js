@@ -41,7 +41,7 @@ const MainContent = ( {
         render={ () => (
           <FoodsPage
             foodPageArticlesData={ foodPageArticlesData }
-            filterFn={category ? (article) => article.category === category : Boolean}
+            filterFn={ category ? (article) => article.category === category : Boolean }
             setCategory={ setCategory }
             toggleLike={ toggleLike }
           />
@@ -55,7 +55,7 @@ const MainContent = ( {
         render={ () => (
           <Favourite
             foodPageArticlesData={ foodPageArticlesData }
-            filterFn={(article) => article.isLiked}
+            filterFn={ (article) => article.isLiked }
             toggleLike={toggleLike}
             setCategory={setCategory}
             />
