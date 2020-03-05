@@ -1,0 +1,31 @@
+.loadMore{
+    width: 97%;
+}
+.load-more-button{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+width: 97%;
+cursor: pointer;
+outline: none;
+transition: background-color 0.2s ease;
+opacity: 0.85;
+}
+
+.load-more-button:active {
+    transform: translateY(2px);
+    filter: saturate(150%);
+ }
+
+ .load-more-button:hover {
+    background-color: #ff5715;
+    border-color: black;
+    color: black;
+    opacity: 1;
+ }

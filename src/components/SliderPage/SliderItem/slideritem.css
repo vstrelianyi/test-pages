@@ -1,0 +1,6 @@
+.slider-item {
+    display: flex;
+    height: 650px;
+    overflow: hidden;
+}
+

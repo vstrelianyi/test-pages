@@ -1,0 +1,45 @@
+.articleBlog{
+    display: flex;
+}
+
+.blog {
+    padding: 0 0 0 10px;
+}
+
+.blogBg{
+    width: 100px;
+    height: 90px;
+}
+
+.blog-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.blog-title a {
+    text-decoration: none;
+    color: #1a1a1a;
+    line-height: 26px;
+    transition: color 0.2s linear;
+}
+
+.blog-title a:hover {
+    color: #ff5715;
+}
+
+.blog-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 20px;
+    padding-right: 20px;
+}
+
+.blog-date, .blog-info span {
+    color: #808080;
+}
+
+.blog-comments{
+    margin-right: 20px;
+}
+

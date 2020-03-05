@@ -1,0 +1,17 @@
+.about-stories__content {
+    padding: 5px 15px 18px 48px;
+
+    width: 50%;
+}
+
+.about-stories__title {
+    font-size: 30px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 900;
+    font-family: "Playfair Display", serif;
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+}

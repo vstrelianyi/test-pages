@@ -1,0 +1,49 @@
+.roger-content {
+    width: 25%;
+    height: 710px;
+    background: #1f1f1f;
+    padding: 68px 24px 45px 24px;
+    position: relative;
+    top: -60px;
+}
+
+.roger-video {
+    margin-bottom: 40px;
+}
+
+.roger-video a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.roger-video a:hover {
+    opacity: 0.8;
+}
+
+.roger-video a img {
+    height: 15px;
+
+    position: relative;
+    left: 20px;
+}
+
+.roger-name {
+    font-family: "Playfair Display", serif;
+    font-size: 70px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 38px;
+}
+
+.roger-sig {
+    font-style: italic;
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+    color: rgba(255, 255, 255, 0.2);
+    text-decoration: underline;
+}

@@ -1,0 +1,46 @@
+.subs-mail-address {
+    width: 350px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 30px 10px;
+    outline: none;
+    background-color: #dbdbdb;
+}
+
+input[type="email"] {
+    /*стили для вписываемой части инпута*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #999999;
+    padding-left: 15px;
+}
+
+.subs-mail-address::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #999999;
+}
+
+.subs-button {
+    background-color: rgba(0, 0, 0);
+    color: #fff;
+    height: 60px;
+    font-size: 22px;
+    line-height: 18px;
+    text-transform: lowercase;
+    border: 3px solid rgba(0, 0, 0);
+    border-radius: 0 5px 5px 0;
+    transition: border 0.2s linear, background-color 0.2s linear;
+    position: relative;
+    left: -5px;
+    cursor: pointer;
+}
+
+.subs-button:hover {
+    background-color: #ff5715;
+    border: #ff5715;
+}

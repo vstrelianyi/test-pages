@@ -1,0 +1,8 @@
+.stories {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.recent-stories {
+    display: flex;
+}

@@ -1,0 +1,14 @@
+
+
+.content{
+    margin: 15px 0 15px;
+    display: flex;
+}
+
+.articles{
+    width: 75%;
+}
+
+.sidebar{
+    width: 25%;
+}

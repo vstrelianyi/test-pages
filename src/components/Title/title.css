@@ -1,0 +1,21 @@
+.title {
+    font-size: 30px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 900;
+    font-family: "Playfair Display", serif;
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.title::after {
+    position: absolute;
+    bottom: 8px;
+    width: 10px;
+    height: 10px;
+    content: '';
+    background: #ffd615;
+}
+
+

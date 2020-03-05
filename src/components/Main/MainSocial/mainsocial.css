@@ -1,0 +1,24 @@
+.stories-little__item-social {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    padding: 5px 0;
+}
+
+.share, .view, .like, .comment{
+    fill:#000;
+    height: 22px;
+    width: 22px;
+
+    transition: all 0.2 linear;
+}
+
+.share:hover, .view:hover, .like:hover, .comment:hover{
+    transform: translateY(-3px);
+    transform: scale(1.5);
+    fill: #ff5715;
+}
+
+.liked{
+    fill: #ff5715
+}

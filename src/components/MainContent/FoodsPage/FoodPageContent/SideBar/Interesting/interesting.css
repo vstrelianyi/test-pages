@@ -1,0 +1,48 @@
+.interesting{
+    background-color: #eeececda;
+
+    padding: 25px 0 50px;
+
+}
+
+.interesting-item{
+    width: 100%;
+    height: 200px;
+    margin: 30px 0 30px;
+
+    cursor: pointer;
+
+    transition: opacity 0.2s linear;
+}
+
+.interesting-item:hover{
+    opacity: 0.7;
+}
+
+.interesting-item1{
+    background: url('/images/category-2.jpg') center/cover;
+}
+
+.interesting-item2{
+    background: url('/images/category-1.jpg') center/cover;
+}
+
+.interesting-item3{
+    background: url('/images/image_5.jpg') center/cover;
+}
+
+.text{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 32px;
+    color: #fff
+}

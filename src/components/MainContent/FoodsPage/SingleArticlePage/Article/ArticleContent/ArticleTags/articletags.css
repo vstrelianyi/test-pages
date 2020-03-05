@@ -1,0 +1,8 @@
+.article-tags {
+    padding: 10px 10px 10px 0;
+}
+
+.article-tag {
+    padding: 3px;
+    color: rgba(0, 0, 0, 0.5);
+}
