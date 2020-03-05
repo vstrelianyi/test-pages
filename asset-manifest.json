@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/test-pages/static/css/main.8ada91ae.chunk.css",
+    "main.js": "/test-pages/static/js/main.801ac2e6.chunk.js",
+    "main.js.map": "/test-pages/static/js/main.801ac2e6.chunk.js.map",
+    "runtime-main.js": "/test-pages/static/js/runtime-main.ba38e7df.js",
+    "runtime-main.js.map": "/test-pages/static/js/runtime-main.ba38e7df.js.map",
+    "static/css/2.4ebc5633.chunk.css": "/test-pages/static/css/2.4ebc5633.chunk.css",
+    "static/js/2.b560f7a6.chunk.js": "/test-pages/static/js/2.b560f7a6.chunk.js",
+    "static/js/2.b560f7a6.chunk.js.map": "/test-pages/static/js/2.b560f7a6.chunk.js.map",
+    "index.html": "/test-pages/index.html",
+    "precache-manifest.6f752a23eca90ad5a09e9372cca3c44c.js": "/test-pages/precache-manifest.6f752a23eca90ad5a09e9372cca3c44c.js",
+    "service-worker.js": "/test-pages/service-worker.js",
+    "static/css/2.4ebc5633.chunk.css.map": "/test-pages/static/css/2.4ebc5633.chunk.css.map",
+    "static/css/main.8ada91ae.chunk.css.map": "/test-pages/static/css/main.8ada91ae.chunk.css.map",
+    "static/js/2.b560f7a6.chunk.js.LICENSE": "/test-pages/static/js/2.b560f7a6.chunk.js.LICENSE",
+    "static/media/bigstory.css": "/test-pages/static/media/1.f0bb9f93.jpg",
+    "static/media/arrowToRight.svg": "/test-pages/static/media/arrowToRight.b7caa255.svg",
+    "static/media/author.jpg": "/test-pages/static/media/author.b7dbcaad.jpg",
+    "static/media/bg_2.jpg": "/test-pages/static/media/bg_2.1b8fac28.jpg",
+    "static/media/rogerimg.css": "/test-pages/static/media/bg_3.6ba54e47.jpg",
+    "static/media/foodpageintro.css": "/test-pages/static/media/bg_4.43268711.jpg",
+    "static/media/statsbg.css": "/test-pages/static/media/bg_5.16fd90be.jpg",
+    "static/media/email-envelope-button.svg": "/test-pages/static/media/email-envelope-button.d3078c7f.svg",
+    "static/media/facebook.svg": "/test-pages/static/media/facebook.a8f4bf47.svg",
+    "static/media/instagram.svg": "/test-pages/static/media/instagram.edbdd8cc.svg",
+    "static/media/magnifying-glass.svg": "/test-pages/static/media/magnifying-glass.1d59e3c7.svg",
+    "static/media/pin.svg": "/test-pages/static/media/pin.328e0f25.svg",
+    "static/media/play-button-arrowhead.svg": "/test-pages/static/media/play-button-arrowhead.2be1e204.svg",
+    "static/media/slick-theme.css": "/test-pages/static/media/slick.f97e3bbf.svg",
+    "static/media/telegram.svg": "/test-pages/static/media/telegram.b0324aad.svg",
+    "static/media/telephone-handle-silhouette.svg": "/test-pages/static/media/telephone-handle-silhouette.bbe88ba7.svg",
+    "static/media/twitter.svg": "/test-pages/static/media/twitter.5790426f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ba38e7df.js",
+    "static/css/2.4ebc5633.chunk.css",
+    "static/js/2.b560f7a6.chunk.js",
+    "static/css/main.8ada91ae.chunk.css",
+    "static/js/main.801ac2e6.chunk.js"
+  ]
+}
