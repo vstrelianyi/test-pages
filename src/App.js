@@ -9,6 +9,8 @@ import MainContent from "./components/MainContent/MainContent";
 import Footer from "./components/Footer/Footer";
 import foodPageArticlesData from './components/MainContent/FoodsPage/FoodPageContent/FoodPageContent/FoodPafeArticles/foodPageArticlesData.js'
 
+import { BrowserRouter as Router } from "react-router-dom";
+
 class App extends Component {
 
   state = {
@@ -43,17 +45,20 @@ class App extends Component {
   render() {
     const favCount = this.state.foodPageArticlesData.filter((article) => article.isLiked).length
     return (
-      <div className="App">
-        <Header favCount={favCount}/>
+      <Router>
+        <div className="App">
 
-        <MainContent
-          foodPageArticlesData={this.state.foodPageArticlesData}
-          category={this.state.category}
-          setCategory={this.setCategory}
-          toggleLike={this.toggleLike} />
+          <Header favCount={favCount}/>
+          <MainContent
+            foodPageArticlesData={this.state.foodPageArticlesData}
+            category={this.state.category}
+            setCategory={this.setCategory}
+            toggleLike={this.toggleLike}
+          />
+          <Footer />
 
-        <Footer />
-    </div>
+        </div>
+      </Router>
     )
   }
 

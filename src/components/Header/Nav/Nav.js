@@ -15,7 +15,7 @@ function Nav({favCount}) {
         </div>
         <ul className="nav-list">
           <li className="nav-item">
-              <NavLink activeClassName="selected" to='/' className="nav-link">Home</NavLink>
+              <NavLink activeClassName="selected" exact to='/' className="nav-link">Home</NavLink>
           </li>
           <li className="nav-item">
               <NavLink activeClassName="selected" to='/about' className="nav-link">About</NavLink>
