@@ -29,10 +29,10 @@ class App extends Component {
       const foodPageArticle = {...foodPageArticlesData[i], isLiked: !foodPageArticlesData[i].isLiked}
 
       return {foodPageArticlesData: [...foodPageArticlesData.slice(0, i), foodPageArticle, ...foodPageArticlesData.slice(i + 1)]}
-     
+
     })
 
-    const liked = JSON.parse(localStorage.liked || '[]') 
+    const liked = JSON.parse(localStorage.liked || '[]')
     const newLiked = liked.includes(id) ? liked.filter((likedId) => likedId !== id) : [...liked, id]
     localStorage.liked = JSON.stringify(newLiked)
 
@@ -44,15 +44,15 @@ class App extends Component {
     const favCount = this.state.foodPageArticlesData.filter((article) => article.isLiked).length
     return (
       <div className="App">
-      <Header favCount={favCount}/>
+        <Header favCount={favCount}/>
 
-      <MainContent
-         foodPageArticlesData={this.state.foodPageArticlesData}
-         category={this.state.category}
-         setCategory={this.setCategory}
-         toggleLike={this.toggleLike} />
+        <MainContent
+          foodPageArticlesData={this.state.foodPageArticlesData}
+          category={this.state.category}
+          setCategory={this.setCategory}
+          toggleLike={this.toggleLike} />
 
-      <Footer />
+        <Footer />
     </div>
     )
   }
